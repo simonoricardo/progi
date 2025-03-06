@@ -3,7 +3,6 @@
 ## Details
 This is a VueJS SPA backed with a Symfony API. The API uses Symfony 7.2 and PHP 8.4. The SPA uses Vue 3, Node 22 LTS, Typescript and Tailwind.
 
-These details should have been provided to you via email but just in case:
 - While modeling the backend, I did not use a `Vehicle` class although this would have made sense, especially while keeping the open-closed principle in mind. On the other hand, I also did not want to overdo it for a simple assignment, and this could as well have fallen into the YAGNI category. 
 - I'm not sure if the code is organized the "Symfony" way and if I did or didn't do some things that are not "ok" within the community. I tried to read through the docs as much as I could, but that is also quite the task. 
 
