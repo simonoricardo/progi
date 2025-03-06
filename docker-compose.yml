@@ -1,0 +1,39 @@
+services:
+  php:
+    build:
+      context: ./api
+    container_name: symfony_api
+    volumes:
+      - ./api:/var/www
+    networks:
+      - app-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: symfony_nginx
+    volumes:
+      - ./api:/var/www
+      - ./api/nginx/default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "8000:80"
+    depends_on:
+      - php
+    networks:
+      - app-network
+
+  vue-app:
+    build:
+      context: ./app
+    env_file: 
+      - path: "./app/.env"
+    ports:
+      - "5173:80"
+    networks:
+      - app-network
+    depends_on:
+      - php
+
+networks:
+  app-network:
+    driver: bridge
+
