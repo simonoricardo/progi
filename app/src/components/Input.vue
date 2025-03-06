@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { watch } from 'vue'
+
 const value = defineModel<null | number | string>()
 const props = defineProps<{
   type: string
@@ -7,6 +8,7 @@ const props = defineProps<{
   errors?: null | undefined | string[]
 }>()
 </script>
+
 <template>
   <label class="w-full flex-grow basis-3/5" for="vehicle-value">
     <input

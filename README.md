@@ -22,4 +22,5 @@ To run the project, there are 2 options.
 In both cases, the VueJS SPA should be available at `http://localhost:5173` and the API (to test with Postman or other similar tools) at `http://localhost:8000`.
 
 ## To run the tests
-- The tests can be ran by running `php bin/phpunit` in the `api` folder.
+- The API tests can be ran by running `php bin/phpunit` in the `api` folder.
+- The SPA tests can be ran by running `pnpm run test` in the `app` folder.
