@@ -13,7 +13,6 @@ To run the project, there are 2 options.
 
 1. By using Docker (it works on my machine!):
 - While being at the root of the repo (where this file is), run `docker-compose up --build` (add `-d` to run in detached mode).
-- The VueJS SPA will be available at `http://localhost:5173` and the API (to test with Postman or other similar tools) at `http://localhost:8000`.
 
 2. The traditional way:
 - Install the SPA dependencies by running `pnpm install` in the `app` folder. `npm` can also be used, although it won't use the current lock file and will generate an extra `package-lock.json` file. The project can then be started by running `pnpm run dev` (or `npm run dev`).
