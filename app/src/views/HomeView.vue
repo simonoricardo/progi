@@ -45,7 +45,7 @@ watch([inputRef, selectRef], async ([newInputValue, newSelectValue], _) => {
 
 <template>
   <main class="max-w-6xl mx-auto h-full flex flex-col gap-20 items-center py-96">
-    <h1 class="text-4xl font-bold">Auction calculator</h1>
+    <h1 class="text-4xl font-bold text-slate-800 dark:text-slate-300">Auction calculator</h1>
     <div class="flex flex-wrap gap-2 lg:flex-nowrap">
       <CustomSelect
         :errors="selectErrorsRef"
